@@ -8,3 +8,4 @@ class Humano():
 pedro = Humano()
 algo = input("Ingrese mensaje: ")
 pedro.hablar(algo)
+print(pedro.edad)
