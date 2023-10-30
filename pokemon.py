@@ -1,12 +1,18 @@
 class Pokemon():
     """metodo init = metodo constructor"""
     def __init__(self, numero, nombre, peso, altura, tipo, debilidad):
-        self.numero = numero
+        self.__numero = numero
         self.nombre = nombre
         self.peso = peso
         self.altura = altura
         self.tipo = tipo
         self.debilidad = debilidad
+    # De esta forma se declara el numero encapsulado
+    def setNumero (self,numero): 
+        self.numero = numero
+    # De esta forma se obtiene el numero encapsulado
+    def getNumero (self, numero):
+        return self.numero
 #Metodos con __x__ son metodos especiales de python
     def __str__(self):
         return  "Numero: {}\n" \
