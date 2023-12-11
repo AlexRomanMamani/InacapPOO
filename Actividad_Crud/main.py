@@ -24,7 +24,10 @@ try:
             for alumnos in listar:
                 print("{}, {}, {}".format(alumnos[0], alumnos[1], alumnos[2]))
         elif opcion == 2:
-            ...
+            listar = DML.listar_asignaturas_mayor_50_horas()
+            print("ASIGNATURA  //  HORAS")
+            for alumnos in listar:
+                print("{}, {}".format(alumnos[0], alumnos[1]))
         elif opcion == 3:
             ...
         elif opcion == 4:
